@@ -120,9 +120,27 @@ const designEngineers: DesignEngineers = [
     website: 'https://preetsuthar.me/',
     x: 'https://x.com/preetsuthar17',
   },
+  {
+    github: 'https://github.com/pqoqubbw',
+    name: 'dmytro',
+    website: 'https://pqoqubbw.dev/',
+    x: 'https://x.com/pqoqubbw',
+  },
+  {
+    github: 'https://github.com/bdrtsky',
+    name: 'Serhii Bedrytskyi',
+    website: 'https://serhii.be/',
+    x: 'https://x.com/serhii_be',
+  },
+  {
+    github: 'https://github.com/aaronmahlke',
+    name: 'Aaron Mahlke',
+    website: 'https://www.mahlke.design/',
+    x: 'https://x.com/aaronmahlke',
+  },
 ];
 
 export const list = designEngineers
   .map(engineer => engineer.name)
-  .sort(alphaSort())
+  .sort(alphaSort({ caseInsensitive: true }))
   .map(name => designEngineers.find(engineer => engineer.name === name)!);
