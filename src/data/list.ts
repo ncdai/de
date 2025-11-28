@@ -144,6 +144,11 @@ const designEngineers: DesignEngineers = [
     website: 'https://legions.dev/',
     x: 'https://x.com/legionsdev',
   },
+  {
+    name: 'James Baduor',
+    website: 'https://jamesbaduor.com/',
+    x: 'https://x.com/jmsbaduor',
+  },
 ];
 
 export const list = designEngineers
