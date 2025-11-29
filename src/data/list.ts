@@ -262,7 +262,7 @@ const designEngineers: DesignEngineers = [
   },
   {
     github: 'https://github.com/hugosaintemarie',
-    name: 'Hugo',
+    name: 'Hugo Sainte-Marie',
     website: 'https://hugosaintemarie.com/',
     x: 'https://x.com/hugosaintemarie',
   },
