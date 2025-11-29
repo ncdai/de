@@ -71,7 +71,9 @@ export function Engineer({ engineer }: EngineerProps) {
                 transition={{ duration: 0.25 }}
               >
                 <h2>What does Design Engineering mean?</h2>
-                <p>“{engineer.definition}”</p>
+                <p>
+                  <strong>{engineer.name} —</strong> “{engineer.definition}”
+                </p>
               </motion.div>
             </div>
           </motion.div>

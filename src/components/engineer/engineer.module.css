@@ -85,6 +85,10 @@
       & p {
         line-height: 1.6;
         color: var(--color-foreground-subtle);
+
+        & strong {
+          color: var(--color-foreground-subtler);
+        }
       }
     }
   }
