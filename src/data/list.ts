@@ -186,6 +186,12 @@ const designEngineers: DesignEngineers = [
     website: 'https://amitmerchant.com',
     x: 'https://x.com/amit_merchant',
   },
+  {
+    github: 'https://github.com/dimuuu',
+    name: 'Dmytro Kondakov',
+    website: 'https://www.dmytro.fyi/',
+    x: 'https://x.com/dmytro_kondakov',
+  },
 ];
 
 export const list = designEngineers
