@@ -226,6 +226,85 @@ const designEngineers: DesignEngineers = [
     website: 'https://matthewmorek.com/',
     x: 'https://x.com/matthewmorek',
   },
+  {
+    github: 'https://github.com/vishalanandesc',
+    name: 'vishal anand',
+    website: 'https://engineering-experiments.vercel.app/',
+    x: 'https://x.com/vishalanandtwts',
+  },
+  {
+    name: 'Austin Valleskey',
+    website: 'https://www.austinvalleskey.com/',
+    x: 'https://x.com/austinvalleskey',
+  },
+  {
+    github: 'https://github.com/cristicretu',
+    name: 'Cristian Crețu',
+    website: 'https://cretu.dev/',
+    x: 'https://x.com/cristicrtu',
+  },
+  {
+    github: 'https://github.com/rpavlini',
+    name: 'Robert Pavlinić',
+    website: 'https://rpavlini.com/',
+    x: 'https://x.com/rpavlini',
+  },
+  {
+    name: 'Joshua Wolk',
+    website: 'https://www.joshuawolk.com/',
+    x: 'https://x.com/joshuawolk',
+  },
+  {
+    github: 'https://github.com/sorenblank',
+    name: 'Soren Blank',
+    website: 'https://sorenblank.com/',
+    x: 'https://x.com/sorenblank',
+  },
+  {
+    github: 'https://github.com/abjt14',
+    name: 'Abhijeet Singh',
+    website: 'https://www.abjt.dev/',
+    x: 'https://x.com/abjt14',
+  },
+  {
+    github: 'https://github.com/abjt14',
+    name: 'Abhijeet Singh',
+    website: 'https://www.abjt.dev/',
+    x: 'https://x.com/abjt14',
+  },
+  {
+    github: 'https://github.com/gurvinder-singh02',
+    name: 'Guri',
+    website: 'https://gxuri.in/',
+    x: 'https://x.com/Gur__vi',
+  },
+  {
+    name: 'Lochie Axon',
+    website: 'https://lochieaxon.com/',
+    x: 'https://x.com/lochieaxon',
+  },
+  {
+    github: 'https://github.com/pugson',
+    name: 'pugson',
+    website: 'https://wojtek.im/',
+    x: 'https://x.com/pugson',
+  },
+  {
+    github: 'https://github.com/Aeastr',
+    name: 'aether',
+    x: 'https://x.com/AetherAurelia',
+  },
+  {
+    name: 'Vaun Blu',
+    website: 'https://vaunb.lu/',
+    x: 'https://x.com/vaunblu',
+  },
+  {
+    github: 'https://github.com/raphaelsalaja',
+    name: 'Raphael Salaja',
+    website: 'https://www.raphaelsalaja.com/',
+    x: 'https://x.com/raphaelsalaja',
+  },
 ];
 
 export const list = designEngineers
