@@ -1,6 +1,7 @@
 ---
 import type { DesignEngineers } from '@/data/list';
 import { padNumber } from '@/helpers/number';
+import { Engineers } from './engineers';
 
 export interface Props {
   list: DesignEngineers;
@@ -13,35 +14,8 @@ const list = Astro.props.list;
   <div class="count">
     (<span>{padNumber(list.length, 3)}</span> design engineers)
   </div>
-  <ul>
-    {
-      list.map(engineer => (
-        <li>
-          <p class="name">{engineer.name}</p>
-          <div class="divider" />
-          <div class="links">
-            {engineer.x && (
-              <a href={engineer.x} rel="noreferrer" target="_blank">
-                X
-              </a>
-            )}
 
-            {engineer.github && (
-              <a href={engineer.github} rel="noreferrer" target="_blank">
-                GH
-              </a>
-            )}
-
-            {engineer.website && (
-              <a href={engineer.website} rel="noreferrer" target="_blank">
-                WEB
-              </a>
-            )}
-          </div>
-        </li>
-      ))
-    }
-  </ul>
+  <Engineers client:load engineers={list} />
 </section>
 
 <style>
@@ -57,62 +31,6 @@ const list = Astro.props.list;
       & span {
         font-family: var(--font-mono);
         color: var(--color-foreground-subtle);
-      }
-    }
-
-    & ul {
-      list-style: none;
-
-      & li {
-        display: flex;
-        column-gap: 8px;
-        align-items: center;
-
-        &:not(:last-of-type) {
-          margin-bottom: 8px;
-        }
-
-        &:hover {
-          & .divider {
-            border-bottom-color: var(--color-neutral-300);
-          }
-        }
-
-        & .name {
-          font-weight: 500;
-        }
-
-        & .divider {
-          flex-grow: 1;
-          border-bottom: 1px dashed var(--color-neutral-200);
-          transition: 0.2s;
-        }
-
-        & .links {
-          display: flex;
-          column-gap: 4px;
-          align-items: center;
-
-          & a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 4px 12px;
-            font-size: var(--font-2xsm);
-            color: var(--color-foreground-subtle);
-            text-decoration: none;
-            background-color: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 999px;
-            transition: 0.2s;
-
-            &:hover {
-              color: var(--color-foreground);
-              background-color: var(--color-neutral-100);
-              border-color: var(--color-neutral-300);
-            }
-          }
-        }
       }
     }
   }

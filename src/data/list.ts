@@ -1,6 +1,7 @@
 import alphaSort from 'alpha-sort';
 
 export interface DesignEngineer {
+  definition?: string;
   github?: string;
   name: string;
   website?: string;
@@ -80,6 +81,8 @@ const designEngineers: DesignEngineers = [
     x: 'https://x.com/samuelkraft',
   },
   {
+    definition:
+      'Design engineering is a discipline that rejects the artificial boundary between form and function. It operates on the premise that interface design and implementation are not sequential phases but a single, iterative act. Decisions about aesthetics, interaction, and technical architecture inform each other in real time.',
     github: 'https://github.com/brijr',
     name: 'Bridger Tower',
     website: 'https://brijr.dev/',
