@@ -1,5 +1,6 @@
 ---
 import type { DesignEngineers } from '@/data/list';
+import { padNumber } from '@/helpers/number';
 
 export interface Props {
   list: DesignEngineers;
@@ -9,6 +10,9 @@ const list = Astro.props.list;
 ---
 
 <section class="list">
+  <div class="count">
+    (<span>{padNumber(list.length, 3)}</span> design engineers)
+  </div>
   <ul>
     {
       list.map(engineer => (
@@ -43,6 +47,18 @@ const list = Astro.props.list;
 <style>
   .list {
     padding-bottom: 120px;
+
+    & .count {
+      margin-bottom: 24px;
+      font-size: var(--font-xsm);
+      color: var(--color-foreground-subtler);
+      text-align: right;
+
+      & span {
+        font-family: var(--font-mono);
+        color: var(--color-foreground-subtle);
+      }
+    }
 
     & ul {
       list-style: none;
