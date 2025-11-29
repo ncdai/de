@@ -73,7 +73,7 @@
     overflow: hidden;
 
     & .content {
-      padding: 12px 0 4px;
+      padding: 16px 0;
       font-size: var(--font-sm);
 
       & h2 {
